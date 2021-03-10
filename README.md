@@ -10,8 +10,9 @@ It will also create a few reading lists for each library in YACReader that attem
 ## How to use
 
  * Edit progress.php (Update Komga URL, username, password, base path and edit the folder mapping and komga library ids)
- * run `composer install`
- * run the script `php -f progress.php`
+ * Install Composer (https://getcomposer.org/)
+ * Run `composer install`
+ * Run the script `php -f progress.php`
 
 ## Licence
 
