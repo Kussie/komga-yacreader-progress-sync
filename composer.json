@@ -1,0 +1,12 @@
+{
+    "name": "kussie/readsync",
+    "authors": [
+        {
+            "name": "Ben Kuskopf",
+            "email": "kussie@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}

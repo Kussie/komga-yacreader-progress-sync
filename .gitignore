@@ -1,0 +1,59 @@
+# App Stuff
+/node_modules
+/public/hot
+/public/storage
+/public/js/app.js
+/public/css/app.css
+/public/mix-manifest.json
+/storage/*.key
+/vendor
+
+# Logs
+npm-debug.log
+yarn-error.log
+
+# Homestead
+Homestead.json
+Homestead.yaml
+
+# ignore OS generated files
+Desktop.ini
+ehthumbs.db
+Thumbs.db
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+*.iws
+*.iml
+*.ipr
+/.idea
+/.vscode
+
+# Eclipse project files
+.buildpath
+.project
+.settings
+
+# Docker/env
+.env
+.env.backup
+
+# Testing
+api/database/database.sqlite
+
+# PHP CodeSniffer
+*.phpcs-cache
+
+# phpunit
+.phpunit.result.cache
+
+# Ide Helper
+_ide_helper.php
+_ide_helper_models.php
