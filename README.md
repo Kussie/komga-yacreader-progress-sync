@@ -1,0 +1,1 @@
+# komga-yacreader-progress-sync
