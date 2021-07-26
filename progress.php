@@ -127,23 +127,13 @@ foreach ($libraries as $directory) {
             if (is_array($book['readProgress'])) {
                 // komga has some read status on it so lets compare to yacreader
                 if ($book['readProgress']['completed']) {
-                    if ($genre === 'manhwa' && strpos($comicYacName, 'Fallen') !== false) {
-                        echo "is complete\r\n";
-                    }
                     if (!$yacBook['read']) {
-                        if ($genre === 'manhwa' && strpos($comicYacName, 'Fallen') !== false) {
-                            echo "is read\r\n";
-                        }
                         // book is completed in komga
                         $statement = $db->prepare('UPDATE comic_info SET read=1,currentPage=:currentPage WHERE id=:comicInfoId');
                         $statement->bindValue(':currentPage', $book['readProgress']['page']);
                         $statement->bindValue(':comicInfoId', $yacBook['comicInfoId']);
                         $statement->execute();
                         //logger('Marking ' . $book['name'] . ' as completed in YacServer', $logFile);
-                    } else {
-                        if ($genre === 'manhwa' && strpos($comicYacName, 'Fallen') !== false) {
-                            echo "is not read\r\n";
-                        }
                     }
                 } else {
                     if ($book['readProgress']['page'] > $yacBook['currentPage']) {
